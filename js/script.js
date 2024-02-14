@@ -11,11 +11,11 @@ form.onsubmit = event => {
     const weight = inputWeight.value
     const height = inputHeight.value
 
+
     const result = IMC(weight, height)
     const message = `Seu IMC é de ${result}  `
 
     Modal.message.innerText = message
-
     Modal.open()
 }
 
